@@ -1,0 +1,38 @@
+.Nav {
+  background-color: #cacacaa2;
+  border-bottom: 2px solid #000000;
+  color: #100d07;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Afterglow";
+  font-size: 19pt;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  &__Left {
+    width: 20%;
+    padding: 0;
+  }
+
+  &__Right {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &--item {
+      box-sizing: border-box;
+      border-bottom: 3px solid rgba(0, 0, 0, 0);
+      margin: 5px;
+      padding: 5px 0;
+      transition-property: all;
+      transition-duration: 300ms;
+      &:hover {
+        cursor: pointer;
+        border-bottom: 3px solid black;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.Stats {
+  display: flex;
+  width: 80%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-evenly;
+  margin-top: 100px;
+
+  &__Card {
+    &--text {
+      margin-top: 20px;
+
+      font-size: 13pt;
+      font-weight: 600;
+      width: 200px;
+    }
+  }
+}

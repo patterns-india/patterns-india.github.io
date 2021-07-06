@@ -1,0 +1,32 @@
+.ContactUs {
+  height: fit-content;
+  margin-top: 100px;
+  padding: 40px 20px 20px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgba(0, 0, 0, 0.822);
+  color: white;
+
+  &__Head {
+    font-family: "Afterglow";
+    font-size: 18pt;
+  }
+
+  &__Text {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > div {
+      width: 80px;
+      text-align: left;
+    }
+
+    & > img {
+      margin-right: 10px;
+      border-radius: 4px;
+    }
+  }
+}
