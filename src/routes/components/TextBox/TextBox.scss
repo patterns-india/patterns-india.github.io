@@ -6,18 +6,24 @@
   background-color: #c4bfc4ab;
   text-align: center;
   margin: 100px auto 0 auto;
-  padding: 30px 10px 10px 10px;
+  padding: 35px 10px 25px 10px;
   border-left: 2px solid #531741;
   border-right: 2px solid #531741;
 
   &__Heading {
     font-family: "Afterglow";
     font-size: 40pt;
+    margin-bottom: 45px;
+
+    &::first-letter {
+      color: #661d50;
+      border-bottom: 2px solid #531741;
+    }
   }
 
   &__Body {
     font-size: 14pt;
     font-weight: 450;
-    line-height: 20pt;
+    line-height: 22pt;
   }
 }

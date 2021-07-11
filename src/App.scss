@@ -7,4 +7,15 @@
   overflow-y: scroll;
 }
 
+.Header {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 500;
+}
+
+.Content {
+  margin-top: 240px;
+}
+
 @import "react-slideshow-image/dist/styles.css";

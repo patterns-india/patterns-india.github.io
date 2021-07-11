@@ -1,0 +1,76 @@
+.Form {
+  &__Container {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    animation-name: fadeIn;
+    animation-duration: 500ms;
+  }
+
+  &__Content {
+    height: fit-content;
+    width: 40vw;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 20px 20px 20px;
+    border-radius: 5px;
+    animation-name: moveIn;
+    animation-duration: 1s;
+  }
+
+  &__Label {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  &__Message {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  &__Retailer {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+  }
+}
+
+.CloseButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveIn {
+  0% {
+    transform: translate(-50%, 100vh);
+  }
+  20% {
+    transform: translate(-50%, 100vh);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}

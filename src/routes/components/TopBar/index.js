@@ -15,9 +15,9 @@ function TopBar() {
                 <div class="TopBar__Left--item"><img src={mailWhite} alt="" height="15px" width="15px"/>patterns.india92@gmail.com</div>
             </div>
             <div class="TopBar__Right">
-                <img src={fbIcon} alt="" height="18px" width="18px"/>
-                <img src={twIcon} alt="" height="18px" width="18px"/>
-                <img src={igIcon} alt="" height="18px" width="18px"/>
+                <img src={fbIcon} alt="" />
+                <img src={twIcon} alt="" />
+                <img src={igIcon} alt="" />
             </div>
         </div>
     )

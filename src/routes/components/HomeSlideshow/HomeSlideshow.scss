@@ -1,6 +1,6 @@
 .HomeSlideshow {
   margin-top: 50px;
-  height: 400px;
+  height: fit-content;
   width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -11,4 +11,8 @@
 
 .each-slide > div {
   height: 400px;
+}
+
+.react-slideshow-container .default-nav {
+  transform: scale(0.6);
 }

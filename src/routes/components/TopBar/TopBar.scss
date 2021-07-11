@@ -31,6 +31,39 @@
 
     & img {
       margin-left: 15px;
+      height: 18px;
+      width: 18px;
     }
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .TopBar {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .TopBar {
+    font-size: 8pt;
+
+    &__Left {
+      width: 100%;
+      justify-content: space-between;
+
+      &--item {
+        margin-right: 0;
+      }
+    }
+
+    &__Right {
+      display: none;
+    }
+  }
+}
+
+// @media only screen and (max-width: 900px) {
+//   .TopBar {
+//     color: red;
+//   }
+// }

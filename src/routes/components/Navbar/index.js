@@ -1,29 +1,43 @@
 import React from 'react'
 import './Navbar.scss'
-
+import {useHistory} from 'react-router-dom'
 import patternsBlack from '../../../Resources/images/patterns-black.png'
 
 function Navbar() {
+    const history = useHistory();
+
     return (
         <div class="Nav">
         <div class="Nav__Left">
-            <div><img src={[patternsBlack]} height="100px"/></div>
+            <div><img className="Nav__Left--logo" src={[patternsBlack]} /></div>
         </div>
 
         <div class="Nav__Right">
-            <a href="/home">
-                <div class="Nav__Right--item">Home</div>
-            </a>
-            <a href="./About/">
-                <div class="Nav__Right--item">About Us</div>
-            </a>
-            <a href="/collections">
-                <div class="Nav__Right--item">Collections</div>
-            </a>
-            <a>
-                <div class="Nav__Right--item">Services</div>
-            </a>
-            <div class="Nav__Right--item" onclick="scrollBottom()">Contact Us</div>
+            <div 
+            class="Nav__Right--item"
+            onClick= {() => history.push('/')}
+            >Home</div>
+        
+            <div 
+            class="Nav__Right--item"
+            onClick={() => history.push('/about')}
+            >About Us</div>
+        
+        
+            <div 
+            class="Nav__Right--item"
+            onClick={() => history.push('/collections')}
+            >Collections</div>
+        
+        
+            <div 
+            class="Nav__Right--item"
+            onClick={() => history.push('/services')}
+            >Services</div>
+         
+            <div 
+            class="Nav__Right--item" 
+            onClick="">Contact Us</div>
 
         </div>
     </div>

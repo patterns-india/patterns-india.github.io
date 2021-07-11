@@ -1,19 +1,28 @@
 .Nav {
-  background-color: #cacacaa2;
+  // background-color: #cacacaa2;
+  background-color: #cacacaf1;
   border-bottom: 2px solid #000000;
   color: #100d07;
-  padding: 15px 0;
+  padding: 5px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "Afterglow";
-  font-size: 19pt;
+  font-size: 18pt;
   font-weight: 700;
   letter-spacing: 2px;
+
+  &::first-letter {
+    color: #9b2b79;
+  }
 
   &__Left {
     width: 20%;
     padding: 0;
+
+    &--logo {
+      height: 100px;
+    }
   }
 
   &__Right {
@@ -32,6 +41,49 @@
       &:hover {
         cursor: pointer;
         border-bottom: 3px solid black;
+      }
+
+      &::first-letter {
+        color: #661d50;
+        font-size: 20pt;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .Nav {
+    font-size: 16pt;
+    flex-direction: column;
+
+    &__Left {
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    &__Right {
+      width: 100%;
+      justify-content: space-around;
+
+      &--item {
+        &::first-letter {
+          font-size: 18pt;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Nav {
+    font-size: 12pt;
+    &__Right {
+      flex-direction: column;
+
+      &--item {
+        &::first-letter {
+          font-size: 12pt;
+        }
       }
     }
   }

@@ -13,7 +13,7 @@ function ContactUs() {
                 <div className="ContactUs__Text">
                     <img src={pin} alt="." height="20px" width="20px"/>
                     M/S. PATTERNS INDIA F-134<br/>SITAPURA IND. AREA
-                    <br/>OPP- GENPACT JAIPUR-302022,<br/>Rajasthan, India.
+                    , OPP- GENPACT <br/>JAIPUR-302022,Rajasthan, India.
                 </div>
                 <div className="ContactUs__Text">
                     +91-8233933313<br/>
@@ -25,8 +25,8 @@ function ContactUs() {
             </div>
             <div>
                 <div className="ContactUs__Head">Other Links</div>
-                <div className="ContactUs__Text">Frequently asked questions</div>
-                <div className="ContactUs__Text">Like our designs?<br/>Mail us so we can get back to you!</div>
+                <div className="ContactUs__Text">Frequently Asked Questions</div>
+                <div className="ContactUs__Text">Like our designs?<br/>Get In Touch!</div>
             </div>
             <div>
                 <div className="ContactUs__Head">Social Media</div>
