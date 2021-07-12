@@ -6,10 +6,14 @@
   grid-template-columns: 1fr 1fr 1fr;
   background-color: rgba(0, 0, 0, 0.822);
   color: white;
+  text-justify: inter-character;
+  text-align: justify-all;
 
   &__Head {
     font-family: "Afterglow";
     font-size: 18pt;
+    // text-decoration: underline;
+    // border-bottom: 1px solid white;
   }
 
   &__Text {

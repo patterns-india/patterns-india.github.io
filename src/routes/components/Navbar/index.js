@@ -2,6 +2,7 @@ import React from 'react'
 import './Navbar.scss'
 import {useHistory} from 'react-router-dom'
 import patternsBlack from '../../../Resources/images/patterns-black.png'
+import logo2 from '../../../Resources/images/logo2.png'
 
 function Navbar() {
     const history = useHistory();
@@ -9,7 +10,7 @@ function Navbar() {
     return (
         <div class="Nav">
         <div class="Nav__Left">
-            <div><img className="Nav__Left--logo" src={[patternsBlack]} /></div>
+            <div><img className="Nav__Left--logo" src={[logo2]} alt="."/></div>
         </div>
 
         <div class="Nav__Right">

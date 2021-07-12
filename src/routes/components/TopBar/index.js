@@ -3,9 +3,7 @@ import './TopBar.scss'
 
 import phoneWhite from '../../../Resources/images/phone-white.svg';
 import mailWhite from '../../../Resources/images/mail-white.svg';
-import fbIcon from '../../../Resources/images/fb-white.svg';
-import twIcon from '../../../Resources/images/tw-white.svg';
-import igIcon from '../../../Resources/images/ig-white.svg';
+import linkedinIcon from '../../../Resources/images/linkedin-small.png';
 
 function TopBar() {
     return (
@@ -15,9 +13,7 @@ function TopBar() {
                 <div class="TopBar__Left--item"><img src={mailWhite} alt="" height="15px" width="15px"/>patterns.india92@gmail.com</div>
             </div>
             <div class="TopBar__Right">
-                <img src={fbIcon} alt="" />
-                <img src={twIcon} alt="" />
-                <img src={igIcon} alt="" />
+                <img src={linkedinIcon} alt="" />
             </div>
         </div>
     )

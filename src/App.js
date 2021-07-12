@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState,Fragment} from 'react'
 import { BrowserRouter,Switch,Route } from 'react-router-dom';
 
 import Home from './routes/Home';
@@ -20,14 +20,16 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Switch>
-          <Route exact path="/">
-            <Home showForm={showForm} toggleForm={toggleForm}/>
-          </Route>
-          <Route exact path='/about' component={About}/>
-          <Route exact path='/collections' components={Collections}/>
-          <Route exact path='/services' component={Services}/>
-        </Switch>
+        <Fragment>
+          <Switch>
+            <Route exact path="/">
+              <Home showForm={showForm} toggleForm={toggleForm}/>
+            </Route>
+            <Route exact path='/about' component={About}/>
+            <Route exact path='/collections' components={Collections}/>
+            <Route exact path='/services' component={Services}/>
+          </Switch>
+        </Fragment>
       </BrowserRouter>
       <ContactForm showForm={showForm} toggleForm={toggleForm}/>
     </div>

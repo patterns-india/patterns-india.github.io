@@ -6,7 +6,6 @@ import HomeSlideshow from '../components/HomeSlideshow';
 import TextBox from '../components/TextBox';
 import Stats from '../components/Stats';
 import ContactUs from '../components/ContactUs';
-import ContactForm from '../components/Form';
 import 'semantic-ui-css/semantic.min.css'
 import './Home.scss'
 
@@ -18,12 +17,16 @@ export class Home extends Component {
         this.state={}
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     homeText = {
         aboutUs :{
             heading: "About Us",
             text: [
-                "Established in 1991, Patterns India is a premium quality conscious garment manufacturer and exporter delivering through both, private and client-based labels. Our production caters to men/women/children ‘s fashion garments, accessories and home furnishings. With technically skilled employees, in-house cut-to-pack facilities and an industrial site of approximately 50,000 sqft., we offer a flexible production capacity of 75,000 pieces per month. Located in Jaipur (India), we are a Sedex certified, ethically compliant company that promotes transparency. ",
-                "Our business partners and importers are located in the domestic market and at the foreign market: France, Holland, Spain, Japan, USA, Australia,, England and Portugal. We nurture integrity in partnerships and negotiations with suppliers and our employees alike to obtain our mission of delivering products with originality and maximum customer satisfaction. "
+                "Established in 1991, Patterns India is a premium quality conscious garment manufacturer and exporter. Our production caters to men/women/children ‘s fashion garments, accessories and home furnishings, delivering through private and client-based labels. With a competent workforce, 30+ years of experience and in-house cut-to-pack facilities, we offer a flexible production capacity approximating 75,000 pieces per month or more. ",
+                "Located in Jaipur (India), we are a Sedex certified, ethically compliant company that promotes transparency. Our global reach of clients in the foreign markets of UK, Latin America, Argentina, Spain, Japan, USA, France, Australia, Brazil England, Turkey and Portugal as well as the Indian domestic market is a testament to our services. "
             ]
         },
 

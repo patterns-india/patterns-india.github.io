@@ -2,15 +2,9 @@ import React, { Component } from 'react';
 import {Button,Checkbox,Form,Input,Radio,Select,TextArea} from 'semantic-ui-react'
 import crossButton from '../../../Resources/images/close-button.png'
 import { COUNTRY_OPTIONS } from './countriesData'
-import {countries} from '../../../Resources/countries'
 
 import './Form.scss'
 
-const options = [
-    { key: 'm', text: 'Male', value: 'male' },
-    { key: 'f', text: 'Female', value: 'female' },
-    { key: 'o', text: 'Other', value: 'other' },
-  ]
 
 export class ContactForm extends Component {
     constructor(){
@@ -119,7 +113,7 @@ export class ContactForm extends Component {
                             onChange={this.handleChange}
                         />
                     </Form.Group>
-                    { this.state.value && this.state.value != '1' && 
+                    { this.state.value && this.state.value !== '1' && 
                         <div className="Form__Retailer">
                             <Form.Group  widths="equal">
                                 <Form.Field
