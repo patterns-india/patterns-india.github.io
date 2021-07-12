@@ -20,7 +20,7 @@ function ContactUs() {
                     +91-9829367777
                 </div>
                 <div className="ContactUs__Text">
-                    patterns.india92@gmail.com
+                    patterns.india92@gmail.com<br/>patterns@datainfosys.net
                 </div>
             </div>
             <div>
