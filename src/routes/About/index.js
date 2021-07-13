@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
+import Gallery from 'react-photo-gallery';
+import {photos} from '../photos';
 
 import TopBar from '../components/TopBar';
 import Navbar from '../components/Navbar';
 import TextBox from '../components/TextBox';
 import ContactUs from '../components/ContactUs';
+
 
 import './About.scss'
 
@@ -39,6 +42,10 @@ export class About extends Component {
                 </div>
                 <TextBox text={text1.text} heading={text1.heading}/>
                 <TextBox text={text2.text} heading={text2.heading}/>
+
+                <div className="Gallery__Container">
+                    <Gallery photos={photos} direction={"column"} columns={5}/>
+                </div>
                 <ContactUs/>
             </div>
         )
