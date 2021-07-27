@@ -2,15 +2,18 @@ import React from 'react'
 import './Navbar.scss'
 import {useHistory} from 'react-router-dom'
 import patternsBlack from '../../../Resources/images/patterns-black.png'
+import patternsOld from '../../../Resources/images/patternsOld.png'
 import logo2 from '../../../Resources/images/logo2.png'
 
-function Navbar() {
+function Navbar(props) {
     const history = useHistory();
+    const {scrollToBottom} = props;
 
     return (
         <div class="Nav">
         <div class="Nav__Left">
-            <div><img className="Nav__Left--logo" src={[logo2]} alt="."/></div>
+            <div><img className="Nav__Left--logo" src={[patternsOld]} alt="." 
+            style={{height:"60px"}}/></div>
         </div>
 
         <div class="Nav__Right">
@@ -38,7 +41,8 @@ function Navbar() {
          
             <div 
             class="Nav__Right--item" 
-            onClick="">Contact Us</div>
+            onClick={()=>scrollToBottom()}
+            >Contact Us</div>
 
         </div>
     </div>

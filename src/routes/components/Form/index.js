@@ -139,7 +139,7 @@ export class ContactForm extends Component {
                         <Form.Field
                         control={TextArea}
                         label='Message'
-                        placeholder='Tell us more about you...'
+                        placeholder='Please write about your queries in detail'
                         value={this.state.message}
                         onChange={(e)=> this.setState({message: e.target.value})}
                         />

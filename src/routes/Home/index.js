@@ -17,9 +17,10 @@ export class Home extends Component {
         this.state={}
     }
 
-    componentDidMount() {
-        window.scrollTo(0, 0);
-    }
+
+     scrollToBottom = () => {
+         this.contactUs.scrollIntoView({behavior:"smooth"})
+     }
 
     homeText = {
         aboutUs :{
@@ -40,7 +41,7 @@ export class Home extends Component {
             <div className="Home">
                 <div className="Header">
                     <TopBar/>
-                    <Navbar/>
+                    <Navbar scrollToBottom={this.scrollToBottom}/>
                 </div>
 
                 <div className="Content">
@@ -56,7 +57,9 @@ export class Home extends Component {
                 </div>
 
                 <div className="Footer">
-                    <ContactUs/>
+                    <div ref={(el)=>{this.contactUs = el}}>
+                        <ContactUs toggleForm={toggleForm}/>
+                    </div>
                 </div>
               
             </div>

@@ -19,7 +19,7 @@ function Stats() {
             <div className="Stats__Card">
                 <img src={manufacture} alt="" height="80px" width="80px"/>
                 <div className="Stats__Card--text">
-                    1M+ Pieces Manufactured
+                    6M+ Pieces Manufactured
                 </div>
             </div>
             <div className="Stats__Card">
@@ -31,7 +31,7 @@ function Stats() {
             <div className="Stats__Card">
                 <img src={world} alt="" height="80px" width="80px"/>
                 <div className="Stats__Card--text">
-                    Exports to more than 10 Countries
+                    Exports to more than 20 Countries
                 </div>
             </div>
         </div>

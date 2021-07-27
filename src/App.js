@@ -1,6 +1,6 @@
 import {useState,Fragment} from 'react'
 import { BrowserRouter,Switch,Route } from 'react-router-dom';
-
+import ScrollToTop from './routes/components/scrollToTop';
 import Home from './routes/Home';
 import About from './routes/About';
 import Collections from './routes/Collections';
@@ -20,16 +20,16 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Fragment>
+      <ScrollToTop>
           <Switch>
             <Route exact path="/">
-              <Home showForm={showForm} toggleForm={toggleForm}/>
+              <Home toggleForm={toggleForm}/>
             </Route>
-            <Route exact path='/about' component={About}/>
+            <Route exact path='/about' render={()=> <About toggleForm={toggleForm}/>}/>
             <Route exact path='/collections' components={Collections}/>
             <Route exact path='/services' component={Services}/>
           </Switch>
-        </Fragment>
+        </ScrollToTop>
       </BrowserRouter>
       <ContactForm showForm={showForm} toggleForm={toggleForm}/>
     </div>

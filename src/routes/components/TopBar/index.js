@@ -10,10 +10,12 @@ function TopBar() {
         <div class="TopBar">
             <div class="TopBar__Left">
                 <div class="TopBar__Left--item"><img src={phoneWhite} alt="" height="15px" width="15px"/>+91-8233933313</div>
-                <div class="TopBar__Left--item"><img src={mailWhite} alt="" height="15px" width="15px"/>patterns.india92@gmail.com</div>
+                <div class="TopBar__Left--item"><img src={mailWhite} alt="" height="15px" width="15px"/>patterns.india92@gmail.com, patterns@datainfosys.net</div>
             </div>
             <div class="TopBar__Right">
-                <img src={linkedinIcon} alt="" />
+                <a href="https://www.linkedin.com/company/patterns-india/about/">
+                <img src={linkedinIcon} alt=""/>
+                </a>
             </div>
         </div>
     )

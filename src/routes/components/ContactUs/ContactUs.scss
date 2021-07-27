@@ -1,7 +1,7 @@
 .ContactUs {
   height: fit-content;
   margin-top: 100px;
-  padding: 40px 20px 20px 20px;
+  padding: 20px 20px 0 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: rgba(0, 0, 0, 0.822);
@@ -9,20 +9,48 @@
   text-justify: inter-character;
   text-align: justify-all;
 
+  & > div {
+    // border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    height: 220px;
+  }
+
+  &__Logo {
+    background-color: rgb(255, 255, 255);
+    box-shadow: -3px 3px 20px rgba(3, 95, 91, 0.911);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 0px 10px 5px 15px;
+  }
+
   &__Head {
+    width: fit-content;
+    margin: 0 auto;
     font-family: "Afterglow";
     font-size: 18pt;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed white;
+
     // text-decoration: underline;
     // border-bottom: 1px solid white;
   }
 
   &__Text {
     width: 90%;
-    margin: 20px auto;
+    margin: 10px auto;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 12pt;
+    line-height: 120%;
 
     & > div {
       width: 80px;
@@ -34,4 +62,12 @@
       border-radius: 4px;
     }
   }
+}
+
+.getintouch {
+  border: 1px solid white;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }

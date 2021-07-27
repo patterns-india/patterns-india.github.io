@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Gallery from 'react-photo-gallery';
 import {photos} from '../photos';
+import sedex from '../../Resources/images/sedex.png';
 
 import TopBar from '../components/TopBar';
 import Navbar from '../components/Navbar';
@@ -26,18 +27,31 @@ const text2 = {
 }
 
 export class About extends Component {
+    constructor(props) {
+        super(props);
+        this.scrollToBottom = this.scrollToBottom.bind(this)
+    }
 
+    componentDidMount(){
+       this.scrollToBottom();
+    }
+
+    scrollToBottom = () => {
+        this.contactUs.scrollIntoView({behavior:"smooth"})
+    }
+    
     render() {
+        const {showForm,toggleForm} = this.props;
         return (
             <div className="About">
                 <div className="Header">
                     <TopBar/>
-                    <Navbar/>
+                    <Navbar scrollToBottom={this.scrollToBottom}/>
                 </div>
                 
                 <div className="Content">
-                    <div className="About__Video">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/62_ZPmG0CIQ?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div className="About__Video" ref={(el)=>{this.aboutVideo = el}}>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/62_ZPmG0CIQ?autoplay=1&rel=0" title="YouTube video player" frameborder="0" allow="fullscreen;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
                 <TextBox text={text1.text} heading={text1.heading}/>
@@ -46,7 +60,16 @@ export class About extends Component {
                 <div className="Gallery__Container">
                     <Gallery photos={photos} direction={"column"} columns={5}/>
                 </div>
-                <ContactUs/>
+
+                <div className="Sedex">
+                    <img src={sedex} alt="." height="100px" width="100px" style={{marginRight:"20px"}}/>
+                    <div>We Are Sedex Certified</div>
+                </div>
+
+                <div ref={(el)=>{this.contactUs = el}}>
+                    <ContactUs toggleForm={toggleForm}/>
+                </div>
+
             </div>
         )
     }
