@@ -26,7 +26,7 @@ function App() {
               <Home toggleForm={toggleForm}/>
             </Route>
             <Route exact path='/about' render={()=> <About toggleForm={toggleForm}/>}/>
-            <Route exact path='/collections' components={Collections}/>
+            <Route exact path='/collections' render={()=> <Collections toggleForm={toggleForm}/>}/>
             <Route exact path='/services' component={Services}/>
           </Switch>
         </ScrollToTop>
