@@ -1,0 +1,38 @@
+.Services__Content {
+  margin-top: 170px;
+
+  &__Service {
+    height: 400px;
+    width: 700px;
+    border: 2px solid white;
+    margin: 0 auto 20px auto;
+    overflow: hidden;
+    display: flex;
+    width: 90%;
+    z-index: 2;
+
+    &--text {
+      margin: 50px auto;
+    }
+
+    &--heading {
+      font-weight: bold;
+      font-size: 25pt;
+      border-bottom: 2px solid rgb(61, 1, 61);
+      padding-bottom: 10px;
+    }
+
+    &--subheading {
+      margin-top: 20px;
+    }
+  }
+}
+
+.image {
+  z-index: 1;
+  transition: all;
+  transition-duration: 2s;
+}
+.image :hover {
+  transform: scale(1.05);
+}
