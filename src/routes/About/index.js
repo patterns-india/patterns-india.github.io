@@ -32,9 +32,7 @@ export class About extends Component {
         this.scrollToBottom = this.scrollToBottom.bind(this)
     }
 
-    componentDidMount(){
-       this.scrollToBottom();
-    }
+    
 
     scrollToBottom = () => {
         this.contactUs.scrollIntoView({behavior:"smooth"})

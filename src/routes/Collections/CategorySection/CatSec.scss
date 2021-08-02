@@ -1,0 +1,99 @@
+.CategorySection {
+  margin-top: 140px;
+
+  &__Nav {
+    position: fixed;
+    left: 0;
+    top: 138px;
+    height: 100vh;
+    width: 280px;
+    border-right: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.829);
+
+    &--header {
+      width: fit-content;
+      border-bottom: 2px solid purple;
+      margin: 30px auto;
+      padding-bottom: 5px;
+      font-size: 18pt;
+      font-weight: bold;
+    }
+
+    &--category {
+      text-align: left;
+      margin: 0 0 20px 30px;
+      font-size: 14pt;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+
+  &__Cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 280px;
+
+    &--Card {
+      height: 20px;
+      border: 1px solid white;
+      height: 400px;
+      transition: all;
+      transition-duration: 200ms;
+      background-color: rgba(216, 216, 216, 0.637);
+
+      &:hover {
+        transform: scale(1.02);
+        z-index: 100;
+        background-color: rgb(233, 233, 233);
+        border: 2px solid rgb(66, 1, 66);
+        border-radius: 4px;
+      }
+
+      &--head {
+        font-weight: bold;
+        font-size: 13pt;
+        margin: 10px;
+      }
+    }
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+.fadeOut {
+  animation-name: fadeOut1;
+  animation-duration: 300ms;
+}
+
+.slideInLeft {
+  animation-name: slideInFromLeft;
+  animation-duration: 800ms;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translate(-300px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.flower {
+  margin-right: 10px;
+}
+
+@keyframes fadeOut1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

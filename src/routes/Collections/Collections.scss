@@ -34,8 +34,24 @@
   position: relative;
   transition: all;
   transition-delay: 200ms;
+  height: 800px;
+  overflow: hidden;
 }
 
 .image:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
+}
+
+.fadeOut {
+  animation-name: fadeAway;
+  animation-duration: 1s;
+}
+
+@keyframes fadeAway {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
