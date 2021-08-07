@@ -4,6 +4,7 @@ import './index.scss';
 import App from './App';
 
 import './Resources/fonts/afterglow.ttf'
+import 'semantic-ui-css/semantic.min.css'
 
 
 ReactDOM.render(

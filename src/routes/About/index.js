@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import Gallery from 'react-photo-gallery';
-import {photos} from '../photos';
+import collage from '../../Resources/images/mosaic/collage.jpg';
 import sedex from '../../Resources/images/sedex.png';
 
 import TopBar from '../components/TopBar';
@@ -56,7 +55,7 @@ export class About extends Component {
                 <TextBox text={text2.text} heading={text2.heading}/>
 
                 <div className="Gallery__Container">
-                    <Gallery photos={photos} direction={"column"} columns={5}/>
+                    <img src={collage} alt="" width="100%" height="100%" />
                 </div>
 
                 <div className="Sedex">

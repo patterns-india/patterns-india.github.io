@@ -1,5 +1,5 @@
-import {useState,Fragment} from 'react'
-import { BrowserRouter,Switch,Route } from 'react-router-dom';
+import {useState} from 'react'
+import { BrowserRouter,Route,HashRouter } from 'react-router-dom';
 import ScrollToTop from './routes/components/scrollToTop';
 import Home from './routes/Home';
 import About from './routes/About';
@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <ScrollToTop>
-          <Switch>
+          <HashRouter basename='/'>
             <Route exact path="/">
               <Home toggleForm={toggleForm}/>
             </Route>
@@ -33,7 +33,7 @@ function App() {
               <Collections toggleForm={toggleForm}/>
             </Route>
             <Route exact path='/services' component={Services}/>
-          </Switch>
+          </HashRouter>
         </ScrollToTop>
       </BrowserRouter>
       <ContactForm showForm={showForm} toggleForm={toggleForm}/>
