@@ -7,23 +7,22 @@ import twColor from '../../../Resources/images/twcolor.png';
 import pin from '../../../Resources/images/pin.png'
 
 function ContactUs(props) {
-    const {toggleForm} = props;
+    const {toggleForm,isCollection,categorySelected} = props;
 
     return (
-        <div className="ContactUs">
+        <div className={`ContactUs ${isCollection ? 'nomargintop':''}`}>
             <div style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
                 <div className="ContactUs__Logo">
                     <img src={patternsOld} alt="." width="100%"/>
                 </div>
-                <div className="ContactUs__Text">
-                    {/* <img src={pin} alt="." height="20px" width="20px"/> */}
-                    M/S. Patterns India F-134<br/>Sitapura Ind. Area,
-                    Opposite Genpact <br/>Jaipur - 302022, Rajasthan, India.
+                <div className="ContactUs__Text" onClick={()=>window.open('https://maps.app.goo.gl/ekALvQagTmExt2Bb6')}>
+                    <img src={pin} alt="." height="20px" width="20px"/>
+                     C-84 ,Ram das Marg<br/>Tilak Nagar,Jaipur - 302004,
+                    <br/>Rajasthan, India.
                 </div>
             </div>
             <div>
                 <div className="ContactUs__Head">Other Useful Links</div>
-                {/* <div className="ContactUs__Text">Frequently Asked Questions</div> */}
                 <div className="ContactUs__Text getintouch" onClick={()=> toggleForm()}>Like our designs? Get In Touch!</div>
             </div>
             <div>

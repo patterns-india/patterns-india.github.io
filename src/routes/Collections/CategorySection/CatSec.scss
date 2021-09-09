@@ -32,11 +32,14 @@
   &__Cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
     margin-left: 280px;
 
     &--Card {
       height: 20px;
-      border: 1px solid white;
+      border: 0.2px solid white;
       height: 400px;
       transition: all;
       transition-duration: 200ms;

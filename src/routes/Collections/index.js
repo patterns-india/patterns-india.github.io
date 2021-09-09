@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import TopBar from '../components/TopBar';
 import Navbar from '../components/Navbar';
 import CategorySection from './CategorySection';
+import ContactUs from '../components/ContactUs';
 import './Collections.scss'
 
 import fabrics from '../../Resources/images/fabrics2.jpg'
@@ -45,6 +46,7 @@ export class Collections extends Component {
                 </div>
 
                 { categorySelected === 0 ? (
+                    <>
                     <div className="Collections__Content" id="Collections1">
                         <div className="Collections__Content__CategoryTop">
                             <div className="Collections__Content__CategoryTop--first imageHolder">
@@ -61,10 +63,13 @@ export class Collections extends Component {
                             <button className="categoryButtons" onClick={()=> this.changeCategory(3)}>Value Additions</button>
                         </div>
                     </div>
+                    <div ref={(el)=>{this.contactUs = el}}>
+                        <ContactUs toggleForm={this.props.toggleForm} isCollection={true} categorySelected={categorySelected}/>
+                    </div>
+                    </>
                 ) : (
                     <CategorySection categorySelected={categorySelected} changeCategory={(e) => this.setState({categorySelected:e})}/>
                 )}
-
             </div>
         )
     }

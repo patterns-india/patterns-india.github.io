@@ -46,8 +46,9 @@ export class Services extends Component {
                         </div>
                     </div>
                 </div>
-
-                <ContactUs/>
+                <div ref={(el)=>{this.contactUs = el}}>
+                    <ContactUs toggleForm={this.props.toggleForm}/>
+                </div>
             </div>
         )
     }

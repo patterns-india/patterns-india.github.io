@@ -32,7 +32,9 @@ function App() {
             <Route exact path='/collections'>
               <Collections toggleForm={toggleForm}/>
             </Route>
-            <Route exact path='/services' component={Services}/>
+            <Route exact path='/services'>
+              <Services toggleForm={toggleForm}/>
+            </Route>
           </HashRouter>
         </ScrollToTop>
       </BrowserRouter>

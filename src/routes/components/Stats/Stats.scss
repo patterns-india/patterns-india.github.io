@@ -17,3 +17,27 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .Stats {
+    margin-top: 40px;
+    width: 90vw;
+    // border: 1px solid white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+
+    &__Card {
+      &--text {
+        // border: 1px solid white;
+        font-size: 10pt;
+        width: 70%;
+        margin: 10px auto 0 auto;
+      }
+      & > img {
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+}

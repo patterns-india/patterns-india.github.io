@@ -18,16 +18,16 @@ export class Home extends Component {
     }
 
 
-     scrollToBottom = () => {
-         this.contactUs.scrollIntoView({behavior:"smooth"})
-     }
+    scrollToBottom = () => {
+        this.contactUs.scrollIntoView({behavior:"smooth"})
+    }
 
     homeText = {
         aboutUs :{
             heading: "About Us",
             text: [
-                "Established in 1991, Patterns India is a premium quality conscious garment manufacturer and exporter. Our production caters to men/women/children ‘s fashion garments, accessories and home furnishings, delivering through private and client-based labels. With a competent workforce, 30+ years of experience and in-house cut-to-pack facilities, we offer a flexible production capacity approximating 75,000 pieces per month or more. ",
-                "Located in Jaipur (India), we are a Sedex certified, ethically compliant company that promotes transparency. Our global reach of clients in the foreign markets of UK, Latin America, Argentina, Spain, Japan, USA, France, Australia, Brazil England, Turkey and Portugal as well as the Indian domestic market is a testament to our services. "
+                "Established in 1991, Patterns India is a premium quality conscious garment manufacturer and exporter. Our production caters to men/women/children ‘s fashion garments, accessories and home furnishings, delivering through private and client-based labels. With a competent workforce, 30+ years of experience and cut-to-pack facilities, we offer a flexible production capacity with an average of 200000 pieces per month or more, manufactured at multiple sites.",
+                "Located in Jaipur (India), we are a Sedex certified, ethically compliant company that promotes transparency. Our global reach of clients in the foreign markets of USA,Europe,Latin America ,Argentina,Uruguay,Paraguay, Spain, Japan, Australia, Brazil, Turkey and Portugal as well as the Indian domestic market is a testament to our services. "
             ]
         },
 

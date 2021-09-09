@@ -28,3 +28,35 @@
     line-height: 22pt;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .TextBox {
+    margin-top: 50px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .TextBox {
+    margin-top: 380px;
+    width: 98vw;
+
+    &__Heading {
+      font-family: "Afterglow";
+      font-size: 25pt;
+      margin-bottom: 35px;
+    }
+
+    &__Body {
+      font-size: 12pt;
+      font-weight: 450;
+      line-height: 22pt;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .TextBox {
+    margin-top: 390px;
+  }
+}
