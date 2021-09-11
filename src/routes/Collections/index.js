@@ -44,10 +44,12 @@ export class Collections extends Component {
                     <TopBar/>
                     <Navbar scrollToBottom={this.scrollToBottom}/>
                 </div>
-
                 { categorySelected === 0 ? (
                     <>
                     <div className="Collections__Content" id="Collections1">
+                        <div className="Collections__Video" ref={(el)=>{this.aboutVideo = el}}>
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/znHdUv58vR8?autoplay=1&rel=0" title="YouTube video player" frameborder="0" allow="fullscreen;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <div className="Collections__Content__CategoryTop">
                             <div className="Collections__Content__CategoryTop--first imageHolder">
                                 <img className="image" src={products} alt="" width="100%"/>

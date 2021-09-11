@@ -55,3 +55,21 @@
     opacity: 0;
   }
 }
+
+.Collections {
+  &__Video {
+    width: 80vw;
+    position: relative;
+    height: 45vw; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
+    margin: 200px auto 50px auto;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid rgba(128, 128, 128, 0.541);
+
+    // & > iframe {
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    // }
+  }
+}
