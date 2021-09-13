@@ -7,7 +7,7 @@ import f1 from '../../../Resources/images/flower1.png'
 import f2 from '../../../Resources/images/flower2.png'
 
 const cards = [
-    "","","","","","","","","","","","","","","",
+    "COTTON","LINEN","VISCOSE","BAMBER","DENIM","SEQUINS","PRINTS","YARNDYED","DIGITAL PRINTS","SCHIFFLI","EMBROIDERIES","CUTWORK","BEADWORK","LACES","",
 ]
 
 function CategorySection(props) {
@@ -46,9 +46,9 @@ function CategorySection(props) {
             <div className="CategorySection__Cards fadeIn">
                 { cards && cards.map((data) => (
                     <div className="CategorySection__Cards--Card">
-                        <img alt="." height="70%" width="90%" style={{marginTop:"20px"}}/>
-                        <div className="CategorySection__Cards--Card--head"> Product Heading </div>
-                        <div className="CategorySection__Cards--Card--text"> This is a sample one line text for the product </div>
+                        {/* <img alt="." height="70%" width="90%" style={{marginTop:"20px"}}/> */}
+                        <div className="CategorySection__Cards--Card--head"> {data}</div>
+                        {/* <div className="CategorySection__Cards--Card--text"> This is a sample one line text for the product </div> */}
                     </div>
                 ))}
             </div>

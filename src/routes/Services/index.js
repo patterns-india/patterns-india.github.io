@@ -28,21 +28,21 @@ export class Services extends Component {
                         <img src={buy} alt="." width="45%" className="image"/>
                         <div className="Services__Content__Service--text">
                             <div className="Services__Content__Service--heading">Buying House Services</div>
-                            <div className="Services__Content__Service--subheading">Writeup on Buying House Services</div>
+                            <div className="Services__Content__Service--subheading"></div>
                         </div> 
                     </div>
                     <div className="Services__Content__Service">
                         <img src={manuf} alt="." width="45%" className="image"/>
                         <div className="Services__Content__Service--text">
                             <div className="Services__Content__Service--heading">Brand Collections</div>
-                            <div className="Services__Content__Service--subheading">Writeup on Brand Collections Services</div>
+                            <div className="Services__Content__Service--subheading"></div>
                         </div>
                     </div>
                     <div className="Services__Content__Service">
                         <img src={brand} alt="." width="45%"  className="image"/>
                         <div className="Services__Content__Service--text">
                             <div className="Services__Content__Service--heading">Manufacturing</div>
-                            <div className="Services__Content__Service--subheading">Writeup on Manufacturing Services</div>                           
+                            <div className="Services__Content__Service--subheading"></div>                           
                         </div>
                     </div>
                 </div>

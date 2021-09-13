@@ -1,0 +1,48 @@
+.MoodCollections {
+  //   border: 1px solid white;
+  margin-top: 150px;
+
+  &__Section {
+    // height: 900px;
+    display: flex;
+    align-items: center;
+    padding: 80px;
+  }
+  &__CategoryBox {
+    background-color: rgba(255, 255, 255, 0.856);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 25%;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 0 0 10px 0;
+    font-family: "Afterglow";
+
+    &--label {
+      background-color: #2b2925;
+      padding: 15px;
+      color: white;
+      font-weight: 700;
+      font-size: 18px;
+
+      letter-spacing: 3px;
+      //   border-radius: 4px 4px 0 0;
+    }
+
+    &--text {
+      padding: 12px 0;
+      font-size: 20px;
+      font-weight: 700px;
+      letter-spacing: 2px;
+    }
+  }
+  &__ImageBox {
+    width: 70%;
+  }
+  &__Image {
+    border-radius: 4px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+      rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+      rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    // border: 2px solid red;
+  }
+}

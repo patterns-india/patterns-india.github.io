@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import TopBar from '../components/TopBar';
 import Navbar from '../components/Navbar';
 import CategorySection from './CategorySection';
+import MoodCollections from './MoodCollections';
 import ContactUs from '../components/ContactUs';
 import './Collections.scss'
 
@@ -53,16 +54,16 @@ export class Collections extends Component {
                         <div className="Collections__Content__CategoryTop">
                             <div className="Collections__Content__CategoryTop--first imageHolder">
                                 <img className="image" src={products} alt="" width="100%"/>
-                                <button className="categoryButtons" onClick={()=> this.changeCategory(1)}>Products</button>
+                                <button className="categoryButtons" onClick={()=> this.changeCategory(1)}>View More</button>
                             </div>
                             <div className="Collections__Content__CategoryTop--second imageHolder">
                                 <img className="image" src={fabrics} alt="" width="100%"/>
-                                <button className="categoryButtons" onClick={()=> this.changeCategory(2)}>Fabrics</button>
+                                <button className="categoryButtons" onClick={()=> this.changeCategory(2)}>View More</button>
                             </div>
                         </div>
                         <div className="Collections__Content__CategoryBottom imageHolder">
                             <img className="image" src={valueadds} at="" width="100%"/>
-                            <button className="categoryButtons" onClick={()=> this.changeCategory(3)}>Value Additions</button>
+                            <button className="categoryButtons" onClick={()=> this.changeCategory(3)}>View More</button>
                         </div>
                     </div>
                     <div ref={(el)=>{this.contactUs = el}}>
@@ -70,7 +71,13 @@ export class Collections extends Component {
                     </div>
                     </>
                 ) : (
-                    <CategorySection categorySelected={categorySelected} changeCategory={(e) => this.setState({categorySelected:e})}/>
+                    // <CategorySection categorySelected={categorySelected} changeCategory={(e) => this.setState({categorySelected:e})}/>
+                    <>
+                    <MoodCollections categorySelected={categorySelected} changeCategory={(e) => this.setState({categorySelected:e})}/>
+                    <div ref={(el)=>{this.contactUs = el}}>
+                        <ContactUs toggleForm={this.props.toggleForm} isCollection={true} categorySelected={categorySelected}/>
+                    </div>
+                    </>
                 )}
             </div>
         )
