@@ -20,23 +20,19 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <ScrollToTop>
-          <HashRouter basename='/'>
-            <Route exact path="/">
-              <Home toggleForm={toggleForm}/>
-            </Route>
-            <Route exact path='/about'>
-              <About toggleForm={toggleForm}/>
-            </Route>
-            {/* <Route exact path='/about' render={()=> <About toggleForm={toggleForm}/>}/> */}
-            <Route exact path='/collections'>
-              <Collections toggleForm={toggleForm}/>
-            </Route>
-            <Route exact path='/services'>
-              <Services toggleForm={toggleForm}/>
-            </Route>
-          </HashRouter>
-        </ScrollToTop>
+        <ScrollToTop />
+          <Route exact path="/">
+            <Home toggleForm={toggleForm}/>
+          </Route>
+          <Route exact path='/about'>
+            <About toggleForm={toggleForm}/>
+          </Route>
+          <Route exact path='/collections'>
+            <Collections toggleForm={toggleForm}/>
+          </Route>
+          <Route exact path='/services'>
+            <Services toggleForm={toggleForm}/>
+          </Route>
       </BrowserRouter>
       <ContactForm showForm={showForm} toggleForm={toggleForm}/>
     </div>
