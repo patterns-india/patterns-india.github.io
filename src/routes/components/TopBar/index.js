@@ -9,12 +9,12 @@ function TopBar() {
     return (
         <div class="TopBar">
             <div class="TopBar__Left">
-                <div class="TopBar__Left--item"><img src={phoneWhite} alt="" height="15px" width="15px"/>+91-8233933313</div>
-                <div class="TopBar__Left--item"><img src={mailWhite} alt="" height="15px" width="15px"/>patterns.india92@gmail.com, patterns@datainfosys.net</div>
+                <div class="TopBar__Left--item"><img src={phoneWhite} alt="phonew" height="15px" width="15px"/>+91-8233933313</div>
+                <div class="TopBar__Left--item"><img src={mailWhite} alt="mailw" height="15px" width="15px"/>patterns.india92@gmail.com, patterns@datainfosys.net</div>
             </div>
             <div class="TopBar__Right">
                 <a href="https://www.linkedin.com/company/patterns-india/about/">
-                <img src={linkedinIcon} alt=""/>
+                <img src={linkedinIcon} alt="linkedin"/>
                 </a>
             </div>
         </div>

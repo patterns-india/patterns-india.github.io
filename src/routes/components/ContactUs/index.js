@@ -13,10 +13,10 @@ function ContactUs(props) {
         <div className={`ContactUs ${isCollection ? 'nomargintop':''}`}>
             <div style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
                 <div className="ContactUs__Logo">
-                    <img src={patternsOld} alt="." width="100%"/>
+                    <img src={patternsOld} alt="patterns" width="100%"/>
                 </div>
                 <div className="ContactUs__Text" onClick={()=>window.open('https://maps.app.goo.gl/ekALvQagTmExt2Bb6')}>
-                    <img src={pin} alt="." height="20px" width="20px"/>
+                    <img src={pin} alt="pin" height="20px" width="20px"/>
                      C-84 ,Ram das Marg<br/>Tilak Nagar,Jaipur - 302004,
                     <br/>Rajasthan, India.
                 </div>

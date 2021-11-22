@@ -26,19 +26,19 @@ function CategorySection(props) {
     return (
         <div className="CategorySection" id="CategorySectionId">
             <div className="CategorySection__Nav slideInLeft">
-                <img src={back} alt="." height="20px" width="20px" style={{position:"absolute",top:"10px",left:"10px",cursor:"pointer"}} onClick={()=> goBack()}/>
+                <img src={back} alt="back" height="20px" width="20px" style={{position:"absolute",top:"10px",left:"10px",cursor:"pointer"}} onClick={()=> goBack()}/>
                 <div className="CategorySection__Nav--header">
                     Collections
                 </div>
                 <div className="CategorySection__Nav--category" onClick={()=> changeCategory(1)}>
-                    <img src={ categorySelected === 1 ? f2 : f1} alt="." height="15px" width="15px" className="flower"/>
+                    <img src={ categorySelected === 1 ? f2 : f1} alt="category" height="15px" width="15px" className="flower"/>
                     Products</div>
                 <div className="CategorySection__Nav--category" onClick={()=> changeCategory(2)}>
-                    <img src={ categorySelected === 2 ? f2 : f1} alt="." height="15px" width="15px" className="flower"/>
+                    <img src={ categorySelected === 2 ? f2 : f1} alt="category3" height="15px" width="15px" className="flower"/>
                     Fabrics
                 </div>
                 <div className="CategorySection__Nav--category" onClick={()=> changeCategory(3)}>
-                    <img src={ categorySelected === 3 ? f2 : f1} alt="." height="15px" width="15px" className="flower"/>
+                    <img src={ categorySelected === 3 ? f2 : f1} alt="category2" height="15px" width="15px" className="flower"/>
                     Value Additions
                 </div>
             </div>

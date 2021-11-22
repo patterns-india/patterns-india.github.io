@@ -14,27 +14,27 @@ const HomeSlideshow = () => {
         <Fade easing="ease" autoplay={true}>
         <div className="each-slide">
             <div>
-                <img src={slide1} alt="" height="100%"/>
+                <img src={slide1} alt="slide1" height="100%"/>
             </div>
         </div>
         <div className="each-slide">
             <div>
-                <img src={slide2} alt="" height="100%"/>
+                <img src={slide2} alt="slide2" height="100%"/>
             </div>
         </div>
         <div className="each-slide">
             <div>
-                <img src={slide3} alt="" height="100%"/>
+                <img src={slide3} alt="slide3" height="100%"/>
             </div>
         </div>
         <div className="each-slide">
             <div>
-                <img src={slide4} alt="" height="100%"/>
+                <img src={slide4} alt="slide4" height="100%"/>
             </div>
         </div>
         <div className="each-slide">
             <div>
-                <img src={slide5} alt="" />
+                <img src={slide5} alt="slide5" />
             </div>
         </div>
         </Fade>

@@ -66,11 +66,11 @@ export class About extends Component {
                 {/* <TextBox text={text3.text} heading={text3.heading}/> */}
 
                 <div className="Gallery__Container">
-                    <img src={collage} alt="" width="100%" height="100%" />
+                    <img src={collage} alt="collage" width="100%" height="100%" />
                 </div>
 
                 <div className="Sedex">
-                    <img src={sedex} alt="." height="100px" width="100px" style={{marginRight:"20px"}}/>
+                    <img src={sedex} alt="sedex" height="100px" width="100px" style={{marginRight:"20px"}}/>
                     <div>We Are Sedex Certified</div>
                 </div>
 

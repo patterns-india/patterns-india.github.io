@@ -194,7 +194,7 @@ export class ContactForm extends Component {
                         <br/>
                         Please try again after a while or message us directly via whatsapp! 
                         <div className="WhatsappBtn" onClick={()=>this.sendWhatsapp()}>
-                            <img src={wa} alt="" height="15px" width="15px" style={{marginRight:"10px"}}/>
+                            <img src={wa} alt="wa" height="15px" width="15px" style={{marginRight:"10px"}}/>
                         WhatsApp Now</div>
                     </div>
                 }

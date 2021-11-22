@@ -12,7 +12,7 @@ function Navbar(props) {
     return (
         <div class="Nav">
         <div class="Nav__Left">
-            <div><img className="Nav__Left--logo" src={[patternsOld]} alt="." 
+            <div><img className="Nav__Left--logo" src={[patternsOld]} alt="pattOld" 
             style={{height:"60px"}}/></div>
         </div>
 

@@ -25,7 +25,7 @@ export class Services extends Component {
 
                 <div className="Services__Content">
                     <div className="Services__Content__Service">
-                        <img src={buy} alt="." width="45%" className="image"/>
+                        <img src={buy} alt="buy" width="45%" className="image"/>
                         <div className="Services__Content__Service--text">
                             <div className="Services__Content__Service--heading">Buying House Services</div>
                             <div className="Services__Content__Service--subheading">
@@ -36,7 +36,7 @@ All this while ensuring 100% quality control and timely delivery
                         </div> 
                     </div>
                     <div className="Services__Content__Service">
-                        <img src={manuf} alt="." width="45%" className="image"/>
+                        <img src={manuf} alt="manuf" width="45%" className="image"/>
                         <div className="Services__Content__Service--text">
                             <div className="Services__Content__Service--heading">Brand Collections</div>
                             <div className="Services__Content__Service--subheading">
@@ -48,7 +48,7 @@ Trademarked in US and India.
                         </div>
                     </div>
                     <div className="Services__Content__Service">
-                        <img src={brand} alt="." width="45%"  className="image"/>
+                        <img src={brand} alt="brand" width="45%"  className="image"/>
                         <div className="Services__Content__Service--text">
                             <div className="Services__Content__Service--heading">Manufacturing</div>
                             <div className="Services__Content__Service--subheading">

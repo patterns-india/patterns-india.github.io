@@ -56,7 +56,7 @@ function MoodCollections(props) {
                 <div className="MoodCollections__ImageBox">
                     <img 
                         className="MoodCollections__Image" 
-                        src={moodboard1} alt="" 
+                        src={moodboard1} alt="mood1" 
                         height="400px" 
                         width="400px"
                         style={{transform:"translate(0px,-80px)"}}
@@ -64,7 +64,7 @@ function MoodCollections(props) {
                     <img 
                         className="MoodCollections__Image" 
                         src={image1} 
-                        alt="" 
+                        alt="mood2" 
                         height="420px" 
                         width="280px"
                         style={{transform:"translate(80px,50px)"}}
@@ -74,26 +74,26 @@ function MoodCollections(props) {
             <div className="MoodCollections__Section">
                 <div className="MoodCollections__ImageBox">
                     <div>
-                        <img className="MoodCollections__Image" src={moodboard2} alt="" height="400px" width="400px"
+                        <img className="MoodCollections__Image" src={moodboard2} alt="mood3" height="400px" width="400px"
                             style={{transform:"translate(-100px,-50px)"}}
                         />
-                        <img className="MoodCollections__Image" src={image2} alt="" height="340px" width="250px"
+                        <img className="MoodCollections__Image" src={image2} alt="mood4" height="340px" width="250px"
                             // style={{transform:"translate()"}}
                         />  
                     </div>
                     <div>
-                        <img className="MoodCollections__Image" src={image3} alt="" height="350px" width="250px"
+                        <img className="MoodCollections__Image" src={image3} alt="mood5" height="350px" width="250px"
                             style={{transform:"translate(-30px,-60px)"}}
                         />
-                        <img className="MoodCollections__Image" src={moodboard3} alt="" height="400px" width="400px"
+                        <img className="MoodCollections__Image" src={moodboard3} alt="mood6" height="400px" width="400px"
                             style={{transform:"translate(50px,50px)"}}
                         /> 
                     </div>
                     <div>
-                        <img className="MoodCollections__Image" src={moodboard6} alt="" height="400px" width="440px"
+                        <img className="MoodCollections__Image" src={moodboard6} alt="mood7" height="400px" width="440px"
                         style={{transform:"translate(-70px,0)"}}
                         />
-                        <img className="MoodCollections__Image" src={image5} alt="" height="300px" width="230px"
+                        <img className="MoodCollections__Image" src={image5} alt="mood8" height="300px" width="230px"
                         style={{transform:"translate(20px,0)"}}/> 
                     </div>
                 </div>
@@ -146,15 +146,15 @@ function MoodCollections(props) {
                 </div>
                 <div className="MoodCollections__ImageBox">
                     <div>
-                        <img className="MoodCollections__Image" src={moodboard4} alt="" height="400px" width="400px"
+                        <img className="MoodCollections__Image" src={moodboard4} alt="mood9" height="400px" width="400px"
                         style={{transform:"translate(0,-30px)"}}
                         />
-                        <img className="MoodCollections__Image" src={image4} alt="" height="340px" width="250px"
+                        <img className="MoodCollections__Image" src={image4} alt="mood10" height="340px" width="250px"
                         style={{transform:"translate(100px,0)"}}
                         /> 
                     </div>
                     <div>
-                        <img className="MoodCollections__Image" src={moodboard5} alt="" height="450px" width="450px"
+                        <img className="MoodCollections__Image" src={moodboard5} alt="mood11s" height="450px" width="450px"
                         style={{transform:"translate(0,50px)"}}/>
                         {/* <img className="MoodCollections__Image" src={image5} alt="" height="300px" width="300px"/> */}
                     </div>

@@ -53,16 +53,16 @@ export class Collections extends Component {
                         </div>
                         <div className="Collections__Content__CategoryTop">
                             <div className="Collections__Content__CategoryTop--first imageHolder">
-                                <img className="image" src={products} alt="" width="100%"/>
+                                <img className="image" src={products} alt="products" width="100%"/>
                                 <button className="categoryButtons" onClick={()=> this.changeCategory(1)}>View More</button>
                             </div>
                             <div className="Collections__Content__CategoryTop--second imageHolder">
-                                <img className="image" src={fabrics} alt="" width="100%"/>
+                                <img className="image" src={fabrics} alt="fabrics" width="100%"/>
                                 <button className="categoryButtons" onClick={()=> this.changeCategory(2)}>View More</button>
                             </div>
                         </div>
                         <div className="Collections__Content__CategoryBottom imageHolder">
-                            <img className="image" src={valueadds} at="" width="100%"/>
+                            <img className="image" src={valueadds} at="valueadd" width="100%"/>
                             <button className="categoryButtons" onClick={()=> this.changeCategory(3)}>View More</button>
                         </div>
                     </div>

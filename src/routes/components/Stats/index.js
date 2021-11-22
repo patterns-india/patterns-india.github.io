@@ -11,25 +11,25 @@ function Stats() {
     return (
         <div className="Stats">
             <div className="Stats__Card">
-                <img src={experience} alt="" height="80px" width="80px"/>
+                <img src={experience} alt="experience" height="80px" width="80px"/>
                 <div className="Stats__Card--text">
                     30+ Years of industry experience
                 </div>
             </div>
             <div className="Stats__Card">
-                <img src={manufacture} alt="" height="80px" width="80px"/>
+                <img src={manufacture} alt="manuf" height="80px" width="80px"/>
                 <div className="Stats__Card--text">
                     6M+ Pieces Manufactured
                 </div>
             </div>
             <div className="Stats__Card">
-                <img src={clients} alt="" height="80px" width="80px"/>
+                <img src={clients} alt="clients" height="80px" width="80px"/>
                 <div className="Stats__Card--text">
                     100+ Satisfied Clients
                 </div>
             </div>
             <div className="Stats__Card">
-                <img src={world} alt="" height="80px" width="80px"/>
+                <img src={world} alt="world" height="80px" width="80px"/>
                 <div className="Stats__Card--text">
                     Exports to more than 20 Countries
                 </div>
