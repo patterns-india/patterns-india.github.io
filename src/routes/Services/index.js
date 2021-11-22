@@ -28,21 +28,32 @@ export class Services extends Component {
                         <img src={buy} alt="." width="45%" className="image"/>
                         <div className="Services__Content__Service--text">
                             <div className="Services__Content__Service--heading">Buying House Services</div>
-                            <div className="Services__Content__Service--subheading"></div>
+                            <div className="Services__Content__Service--subheading">
+                            Patterns India is a buying house bringing sourced products from different ends under one roof, with an array of products in garments, made ups and accessories.
+We develop and create new products using fabrics adn all small elements of your choice, bringing imagination to life. 
+All this while ensuring 100% quality control and timely delivery
+                            </div>
                         </div> 
                     </div>
                     <div className="Services__Content__Service">
                         <img src={manuf} alt="." width="45%" className="image"/>
                         <div className="Services__Content__Service--text">
                             <div className="Services__Content__Service--heading">Brand Collections</div>
-                            <div className="Services__Content__Service--subheading"></div>
+                            <div className="Services__Content__Service--subheading">
+                            We deal in Client based labels, enabling you to create a complete brand related products experience. assurance of no copyright issues, exclusive developments, premium quality, creative freedom, transparency.
+
+We have our own private in-house labels Angel Bay and Kailasa by Angel Bay. 
+Trademarked in US and India.
+                            </div>
                         </div>
                     </div>
                     <div className="Services__Content__Service">
                         <img src={brand} alt="." width="45%"  className="image"/>
                         <div className="Services__Content__Service--text">
                             <div className="Services__Content__Service--heading">Manufacturing</div>
-                            <div className="Services__Content__Service--subheading"></div>                           
+                            <div className="Services__Content__Service--subheading">
+                            We manufacture products for both domestic and export usage, and have a satisfied 
+		client base across many countries.</div>                           
                         </div>
                     </div>
                 </div>
